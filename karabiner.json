@@ -238,7 +238,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$"
+                                            "^com\\.apple\\.Terminal$",
+                                            "^com\\.parallels\\."
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -265,7 +266,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$"
+                                            "^com\\.apple\\.Terminal$",
+                                            "^com\\.parallels\\."
                                         ],
                                         "type": "frontmost_application_if"
                                     }
