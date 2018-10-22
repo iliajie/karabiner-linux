@@ -118,49 +118,6 @@
                         ]
                     },
                     {
-                        "description": "Additional keys for moving focus to next windows in application",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Common for copy (Ctrl+C), paste (Ctrl+V) and cut (Ctrl+X)",
                         "manipulators": [
                             {
@@ -352,34 +309,7 @@
                         ]
                     },
                     {
-                        "description": "Common keys for switching applications",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "tab",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Common keys for switching applications (additional)",
+                        "description": "Common keys for switching applications (Option+Tab)",
                         "manipulators": [
                             {
                                 "from": {
@@ -406,7 +336,34 @@
                         ]
                     },
                     {
-                        "description": "Common keys for switching tabs in applications",
+                        "description": "Common keys for switching applications (Command+Tab)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Common keys for switching tabs in applications (Ctrl+Tab)",
                         "manipulators": [
                             {
                                 "from": {
@@ -433,14 +390,14 @@
                         ]
                     },
                     {
-                        "description": "Additional keys for moving focus to next window in application",
+                        "description": "Additional keys for moving focus to next window in application (Option+`)",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "left_option"
                                         ]
                                     }
                                 },
@@ -453,13 +410,18 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Additional keys for moving focus to next window in application (Command+`)",
+                        "manipulators": [
                             {
                                 "from": {
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "left_control"
                                         ]
                                     }
                                 },
