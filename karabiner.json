@@ -11,7 +11,8 @@
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
                     "basic.to_if_alone_timeout_milliseconds": 1000,
-                    "basic.to_if_held_down_threshold_milliseconds": 500
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
                     {
@@ -111,77 +112,6 @@
                                     {
                                         "key_code": "right_shift",
                                         "lazy": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Common for copy (Ctrl+C), paste (Ctrl+V) and cut (Ctrl+X)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "insert",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "insert",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_forward",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "x",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -316,7 +246,8 @@
                                     "key_code": "tab",
                                     "modifiers": {
                                         "mandatory": [
-                                            "option"
+                                            "left_option",
+                                            "lazy": true
                                         ],
                                         "optional": [
                                             "any"
@@ -327,7 +258,8 @@
                                     {
                                         "key_code": "tab",
                                         "modifiers": [
-                                            "left_command"
+                                            "left_command",
+                                            "lazy": true
                                         ]
                                     }
                                 ],
@@ -343,7 +275,7 @@
                                     "key_code": "tab",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command"
+                                            "left_command"
                                         ],
                                         "optional": [
                                             "any"
@@ -354,7 +286,7 @@
                                     {
                                         "key_code": "tab",
                                         "modifiers": [
-                                            "control"
+                                            "left_control"
                                         ]
                                     }
                                 ],
@@ -397,7 +329,8 @@
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "left_option",
+                                             "lazy": true
                                         ]
                                     }
                                 },
@@ -405,7 +338,8 @@
                                     {
                                         "key_code": "grave_accent_and_tilde",
                                         "modifiers": [
-                                            "left_command"
+                                            "left_control",
+                                             "lazy": true
                                         ]
                                     }
                                 ],
@@ -729,6 +663,9 @@
                 }
             ],
             "name": "GNOME",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
             "simple_modifications": [
                 {
@@ -741,7 +678,8 @@
                 }
             ],
             "virtual_hid_keyboard": {
-                "country_code": 0
+                "country_code": 0,
+                "mouse_key_xy_scale": 100
             }
         }
     ]
